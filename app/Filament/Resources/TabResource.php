@@ -44,17 +44,17 @@ class TabResource extends Resource
                         Tab::make('Tab3')
                             ->schema([
 
-                               Livewire::make(CustomTabComponent1::class)->key('custom-1')
+                               Livewire::make(CustomTabComponent1::class)->key('custom-1')->id('cst1')
                             ]),
                         Tab::make('Tab4')
                             ->schema([
 
-                                Livewire::make(CustomTabComponent2::class)->key('custom-2')
+                                Livewire::make(CustomTabComponent2::class)->key('custom-2')->id('cst2')
                             ]),
                         Tab::make('Tab5')
                             ->schema([
 
-                                Livewire::make(CustomTabComponent3::class)->key('custom-3')
+                                Livewire::make(CustomTabComponent3::class)->key('custom-3')->id('cst3')
                             ]),
                     ])
                     ->contained(false)
